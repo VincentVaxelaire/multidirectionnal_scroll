@@ -5,13 +5,13 @@
 }
 
 /* Hide scroll bar, but while still being able to scroll */
-html, body {
+/* html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 html::-webkit-scrollbar, body::-webkit-scrollbar { 
   display: none;
-}
+} */
 /* Hide scroll bar, but while still being able to scroll */
 
 .horizontal-section {
@@ -37,14 +37,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: flex;
   position: relative;
   height: fit-content;
-}
-
-.last-element {
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: green;
 }
 
 .element {

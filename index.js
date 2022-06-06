@@ -12,8 +12,7 @@ const observerContainers = new IntersectionObserver(function (entries, observerC
     }
     const horLength = entry.target.children[0].scrollWidth
     const distFromTop = entry.target.parentNode.offsetTop;
-    const scrollDistance = distFromTop + horLength - window.innerWidth
-    console.log(scrollDistance), console.log(horLength), console.log(distFromTop)
+    const scrollDistance = distFromTop + horLength - window.innerWidth;
     window.addEventListener('scroll', () => {
       let scrollTop = window.pageYOffset;
 
