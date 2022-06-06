@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>horizontal and vertical scroll on the same page</title>
+</head>
+<body>
+  <main data-page>
+    <section class="horizontal-section" data-horizontal-timeline="true">
+      <div class="sticky-wrapper" data-horizontal-timeline="wrapper">
+        <div class="element-wrapper" data-horizontal-timeline="element-wrapper">
+          <div class="element">test</div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+        </div>
+        <div class="last-element">last</div>
+      </div>
+    </section>
+
+    <section class="vertical-section" data-horizontal-timeline="false">
+      <h1>some text here</h1>
+    </section>
+
+    <section class="horizontal-section" data-horizontal-timeline="true">
+      <div class="sticky-wrapper" data-horizontal-timeline="wrapper">
+        <div class="element-wrapper" data-horizontal-timeline="element-wrapper">
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+        </div>
+        <div class="last-element">last</div>
+      </div>
+    </section>
+
+    <section class="vertical-section" data-horizontal-timeline="false">
+      <h1>some text here</h1>
+    </section>
+  </main>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
