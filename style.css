@@ -31,8 +31,13 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   position: sticky;
   top: 0;
   width: 100%;
-  height: fit-content;
   overflow: hidden;
+}
+
+.sticky-wrapper-vertical {
+  height: 100vh;
+  transform: translateY(-100%);
+  background-color: green;
 }
 
 .element-wrapper {
@@ -48,6 +53,24 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   flex-shrink: 0;
   background-color: #220f22;
   border: red solid 1px;
+}
+
+.element-vertical {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  flex-shrink: 0;
+  background-color: yellowgreen;
+  border: blue solid 1px;
+}
+
+.element-transparent {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: green solid 1px;
 }
 
 h2 {
